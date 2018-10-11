@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>1 Product Page - Plain JavaScript, Multiple Teams, Client Render</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./page.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="https://unpkg.com/systemjs/dist/system.js"></script>
+    <script src="https://unpkg.com/@mif/runtime/bundles/mif-runtime.umd.js"></script>
+    <script src="https://unpkg.com/@mif/core/bundles/mif-core.umd.js"></script>
+    <script>
+      const { render, ROOT_CONTEXT } = mif.core
+      System.import('https://trotyl.github.io/mif-demo-angular/demo-angular.mif.js')
+        .then(m => m.RedApp)
+        .then(RedApp => render(RedApp, { context: ROOT_CONTEXT }, document.body))
+    </script>
+  </body>
+</html>

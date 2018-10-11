@@ -1,0 +1,10 @@
+{
+  "name": "mif-demo-entry",
+  "version": "0.0.1",
+  "main": "./bundles/mif-demo-entry.umd.js",
+  "repository": "https://github.com/trotyl/mif-demo-entry.git",
+  "author": "Trotyl Yu <trotyl@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
+}
